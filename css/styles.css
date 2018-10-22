@@ -109,6 +109,8 @@ nav h1 a {
   height: 50px;
   background-color: #3397DB;
   align-items: center;
+  display: inline-flex;
+  justify-content: center;
 }
 .filter-options h2 {
   color: white;
@@ -154,7 +156,7 @@ nav h1 a {
   display: block;
   margin-top: inherit;
   max-width: 100%;
-  min-height: 248px;
+  max-height: 80%;
   min-width: 100%;
 }
 #restaurants-list li h1 {
