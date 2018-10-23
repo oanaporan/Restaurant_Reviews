@@ -1,0 +1,10 @@
+
+@media screen and (max-width: 749px ) {
+    /* ====================== Restaurant Listing ====================== */
+    #restaurants-list li {
+        width: 75%;
+
+
+    }
+
+}
