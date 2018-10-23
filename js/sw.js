@@ -26,7 +26,7 @@ const cacheFiles = [
  * Fire the installation event
  */
 self.addEventListener('install', (e)=> {
-    e.waitUntill(
+    e.waitUntil(
         caches.open('v1')
         .then(cache => {
            return cache.addAll(cacheFiles);
