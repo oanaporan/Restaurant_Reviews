@@ -5,6 +5,16 @@ var newMap
 var markers = []
 
 /**
+ * Register the service worker.
+ */
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js')
+  .catch(function(error) {
+    console.log(error)
+  });
+}
+
+/**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
  */
 document.addEventListener('DOMContentLoaded', (event) => {
@@ -183,8 +193,6 @@ createRestaurantHTML = (restaurant) => {
   more.setAttribute('role', 'button');
   more.href = DBHelper.urlForRestaurant(restaurant);
   li.append(more)
-
-// <a class="leaflet-control-zoom-out" href="#" title="Zoom out" role="button" aria-label="Zoom out">−</a>
 
   return li
 }
