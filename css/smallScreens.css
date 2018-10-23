@@ -3,8 +3,9 @@
     /* ====================== Restaurant Listing ====================== */
     #restaurants-list li {
         width: 75%;
-
-
     }
-
+    /* ====================== Restaurant Listing ====================== */
+    #map {
+        height: 550px;
+    }
 }
