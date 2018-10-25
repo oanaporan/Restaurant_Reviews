@@ -25,7 +25,8 @@ const cacheFiles = [
 /**
  * Fire the installation event
  */
-self.addEventListener('install', (e)=> {
+self.addEventListener('install', (e) => {
+    //wait untill files are cached the install
     e.waitUntil(
         caches.open('v1')
         .then(cache => {
@@ -42,18 +43,22 @@ self.addEventListener('fetch', (e) => {
         caches.match(e.request)
         .then(response => {
             if (response) {
+                //on success return fetched data
                 return response;
             } else {
+                //if data is not fetched, fetch it
                 return fetch(e.request)
                 .then(response => {
+                    //then clone the response and add it to caches
                     const clonedResponse = response.clone();
                     caches.open('v1').then(cache => {
                         cache.put(e.request, clonedResponse);
                     })
                     return response;
                 })
-                .catch(err => {
-                    console.error(err);
+                //if data could not be fetched return error
+                .catch(error => {
+                    console.log(error);
                 })
             }
         })
