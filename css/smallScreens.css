@@ -4,8 +4,13 @@
     #restaurants-list li {
         width: 75%;
     }
-    /* ====================== Restaurant Listing ====================== */
+    /* ====================== Map ====================== */
     #map {
-        height: 550px;
+        height: 750px;
     }
+    /* ====================== Filter options ====================== */
+    .filter-options {
+        height: 65px;
+    }
+
 }
