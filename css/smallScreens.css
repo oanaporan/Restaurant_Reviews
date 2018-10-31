@@ -1,16 +1,38 @@
 
-@media screen and (max-width: 749px ) {
-    /* ====================== Restaurant Listing ====================== */
-    #restaurants-list li {
-        width: 75%;
-    }
-    /* ====================== Map ====================== */
-    #map {
-        height: 750px;
-    }
+@media screen and (max-width: 660px ) {
+
     /* ====================== Filter options ====================== */
     .filter-options {
-        height: 65px;
+        display: inline-table;
+        padding: 15px;
+    }
+    
+    .filter-options select {
+        width: 90%;
+        justify-items: center;
     }
 
-}
+    /* ======================  Map ====================== */
+
+    .inside #map-container { 
+        background: blue none repeat scroll 0 0; 
+        height: 450px;
+        right: 0; 
+        width: 100%;
+    }
+    .leaflet-container {
+        top: 80px;
+    }
+    /* ====================== Restaurant Details ====================== */
+    #restaurant-container #reviews-container {
+        padding: 10px 80px 30px;
+        width: 80%;
+        left: 5px;
+    }
+
+    #restaurants-list li {
+        width: 80%;
+    }
+
+
+};
