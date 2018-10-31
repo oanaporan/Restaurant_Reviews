@@ -1,6 +1,10 @@
 
 @media screen and (max-width: 660px ) {
 
+    #breadcrumb {
+        display: none;
+    }
+
     /* ====================== Filter options ====================== */
     .filter-options {
         display: inline-table;
@@ -19,19 +23,24 @@
         height: 450px;
         right: 0; 
         width: 100%;
+        position: relative;
     }
     .leaflet-container {
         top: 80px;
     }
     /* ====================== Restaurant Details ====================== */
-    #restaurant-container #reviews-container {
-        padding: 10px 80px 30px;
-        width: 80%;
+    #restaurant-container, #reviews-container {
         left: 5px;
+        width: 90%;
+        position: relative;
     }
 
     #restaurants-list li {
         width: 80%;
+    }
+    /* ====================== Restaurant Details ====================== */
+    .inside #footer {
+        width: 100%;
     }
 
 
