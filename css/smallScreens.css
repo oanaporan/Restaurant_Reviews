@@ -16,7 +16,7 @@
         justify-items: center;
     }
 
-    /* ======================  Map ====================== */
+    /* ======================  Map Inside ====================== */
 
     .inside #map-container { 
         background: blue none repeat scroll 0 0; 
@@ -38,7 +38,7 @@
     #restaurants-list li {
         width: 80%;
     }
-    /* ====================== Restaurant Details ====================== */
+    /* ====================== Footer Inside ====================== */
     .inside #footer {
         width: 100%;
     }
